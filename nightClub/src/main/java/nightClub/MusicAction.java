@@ -6,6 +6,12 @@ import java.util.TimerTask;
 
 public class MusicAction extends TimerTask {
     private MusicStyle musicStyle;
+    private int amountTrack;  //переменная для определения количества треков за ночь в клубе
+    private Timer timer = new Timer();
+
+    public void setAmountTrack(int amountTrack) {
+        this.amountTrack = amountTrack;
+    }
 
     //перечисление доступных музыкальных стилей
     public enum MusicStyle {
@@ -17,6 +23,8 @@ public class MusicAction extends TimerTask {
     public MusicStyle getMusicStyle() {
         return musicStyle;
     }
+
+
 
     //метод для выбора случайной мелодии
     public MusicStyle getRandonMusicStyle() {
@@ -30,12 +38,16 @@ public class MusicAction extends TimerTask {
         MusicStyle m = getRandonMusicStyle();
         this.musicStyle = m;
         System.out.println("currentMusicStyle = " + m);
-        //todo допистаь какойто триггер по остановке таймера..как о узнает что программа завершится?
+        //триггер
+        System.out.println(amountTrack--);  //обратный отсчет от заданного кол-ва треков
+        if (amountTrack < 0) this.timer.cancel();  //остановка таймера
+
+
     }
 
 
     //метод, сменяющий мелодию каждые 5 секунд
     public void changeMusicBySchedule() {
-        new Timer().scheduleAtFixedRate(new MusicAction(), 0L, 5000L);
+        this.timer.scheduleAtFixedRate(new MusicAction(), 0, 5000); //todo или L приписать к цифрам надо?
     }
 }

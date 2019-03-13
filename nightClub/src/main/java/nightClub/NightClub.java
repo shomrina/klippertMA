@@ -26,13 +26,14 @@ public class NightClub
         return r.nextInt(maxPeople + 1);
     }
 
-    public void openClub() {
-        int countPeople = generatePeopleToday();
+    public void openClub(int amountTrack) {
+        int countPeople = generatePeopleToday();  //случайное число людей. пришедшах в клуб
+        musicAction.setAmountTrack(amountTrack);     //установка общего кол-ва треков поставленных на дискотеке
 
         //генерация людей  сразными типами в произвольном порядке
         people = new ArrayList<>();
         for (int i = 0; i < countPeople; i++) {
-            people.add(Person.typeOfPerson(new Random().nextInt(1)));   //todo 1 - это число типов людей, доступных в типах. Поменять и лучше вынести в  переменную
+            people.add(Person.typeOfPerson(new Random().nextInt(2)));   //todo 2 - это число типов людей, доступных в типах. Поменять и лучше вынести в  переменную
         }
 
         musicAction.changeMusicBySchedule();        //start music
@@ -41,10 +42,6 @@ public class NightClub
         for (Person person : people) {
             person.doAction(musicAction.getMusicStyle());  //полиморфный вызов метода
         }
-
-        //генерация музыки
-      //  for (int i = 0; i < 10; i ++) { } //todo здесь 10 это произвольное число треков. пока = 10. вынести в параметр. или как-то еще определять длительность. хотя  врамках таймера еще большой вопрос что это за число
-
 
     }
 
@@ -55,7 +52,7 @@ public class NightClub
     public static void main( String[] args )
     {
         NightClub nightClub = new NightClub(150);
-        nightClub.openClub();
+        nightClub.openClub(15);
 
 /*        Person person = new Person();
         person.doAction();*/
