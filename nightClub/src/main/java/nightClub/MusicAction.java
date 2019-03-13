@@ -6,28 +6,21 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 /** Класс, описывающий поведение музыки, а также содержащий таймер.
- * Содержит поля для хранения стиля музыки, число треков на текущую ночью
+ * Содержит поле для установки числа треков на текущую ночью
  * Также есть список людей, пришедших на дискотеку и метод, определяющий их поведение в зависимости от стиля
  * */
 
 public class MusicAction extends TimerTask {
-    private MusicStyle musicStyle;
-    private int amountTrack;  //переменная для определения количества треков за ночь в клубе
-    private List<Person> people; //значение этого поля задается извне, когда люди сгенерированы
+
+    private int amountTrack;                            //переменная для определения количества треков за ночь в клубе
+    private List<Person> people;                        //значение этого поля задается извне, когда люди сгенерированы
+    private int musicIntervalMC = 5000;
 
     private Timer timer = new Timer();
 
-    //геттеры и сеттеры
-    public void setAmountTrack(int amountTrack) {
-        this.amountTrack = amountTrack;
-    }
-
-    public void setPeople(List people) {
+    //конструктор, получающий на вход список пришедших людей
+    public MusicAction(List<Person> people) {
         this.people = people;
-    }
-
-    public MusicStyle getMusicStyle() {
-        return musicStyle;
     }
 
     /** Описание доступных музыкальных стилей*/
@@ -47,25 +40,25 @@ public class MusicAction extends TimerTask {
     @Override
     public void run() {
         MusicStyle m = getRandonMusicStyle();
-        this.musicStyle = m;
         System.out.println("currentMusicStyle = " + m);
         //триггер
-        System.out.println(amountTrack--);  //обратный отсчет от заданного кол-ва треков
-        if (amountTrack < 0) this.timer.cancel();  //остановка таймера
+        System.out.println(amountTrack--);              //обратный отсчет от заданного кол-ва треков
+        if (amountTrack < 0) this.timer.cancel();       //остановка таймера
 
         //перебор людей пока играет музыка
-        for (Person person : this.people) {  //todo надо выделить в отдельный метод? здесь както в концепт не вписывается его выделение
-            person.doAction(getMusicStyle());  //полиморфный вызов метода
+        for (Person person : this.people) {
+            person.doAction(m);                         //полиморфный вызов метода
         }
 
     }
 
     /** Метод, запускающий таймер, который активирует метод run()
      * В итоге генерится случайный стиль музыки каждые 5 секунд и идет определение действий пришедших в клуб людей.
-     * @param musicAction (@code MusicAction) передается на вход созданный в методе клуба инстанс MusicAction
-     * period (последний параметр) определяет частоту выполнения того, что описано в run().*/
-    //метод, сменяющий мелодию каждые 5 секунд
-    public void changeMusicBySchedule(MusicAction musicAction) {
-        this.timer.scheduleAtFixedRate(musicAction, 0, 5000);  //todo стоит ли 5000 вынести в параметр? и я так и не поняла, он интеджер или лонг?
+     * в качестве TimerTask передается на вход scheduleAtFixedRate созданный в методе клуба инстанс MusicAction
+     * period (последний параметр) определяет частоту выполнения того, что описано в run().
+     * @param amountTrack определяет кол-во запусков того, что лежит в методе run()*/
+    public void changeMusicBySchedule(int amountTrack) {
+        this.amountTrack = amountTrack;
+        this.timer.scheduleAtFixedRate(this, 0, musicIntervalMC);
     }
 }

@@ -1,6 +1,7 @@
 package nightClub;
 
 import java.util.Random;
+
 /**Общий класс. объединяющий и описывающий общее поведение людей*/
 
 public class Person {
@@ -19,19 +20,21 @@ public class Person {
         WOMAN
     }
 
-    public Sex getSex() {
-        return sex;
+    //Перечисление доступных типов людей
+    public enum Dancer {
+        HIPHOPDANCER,
+        RNBDANCER,
+        ELECTRODANCER,
+        POPDANCER
     }
 
-    //Вспомогательный метод. перечисление возможных типов людей. приходящих в клуб и подчиняющихся типу person для генерации случайного выбора
-    public static Person typeOfPerson(int type){
-        if (type == 0) return new Person();
-        else if (type == 1) return new HipHopDancer(); //todo добавить еще танцоров сюда. когда будут созданы
-        else if (type == 2) return new RnBDancer();
-        else if (type == 3) return new ElectroDancer();
-        else if (type == 4) return new PopDancer();
+   //фабрика, создающая людей разных типов из числа доступных
+    public static Person createPerson(Dancer dancer){
+        if (dancer == Dancer.HIPHOPDANCER) return new HipHopDancer();
+        else if (dancer == Dancer.RNBDANCER) return new RnBDancer();
+        else if (dancer == Dancer.ELECTRODANCER) return new ElectroDancer();
+        else if (dancer == Dancer.POPDANCER) return new PopDancer();
         else throw new IllegalArgumentException("wrong type");
-
     }
 
     //метод для генерации случайного значения поля из енама
@@ -42,9 +45,9 @@ public class Person {
 
     /**Метод, определяющий действие человека
      * @param musicStyle  {@code MusicAction} передает играющий стиль музыки, который будет определять действие*/
-    public void doAction(MusicAction.MusicStyle musicStyle) {
+        public void doAction(MusicAction.MusicStyle musicStyle) {
         System.out.println(toString() + "Я не умею танцевать. Я пойду в бар и буду пить водку.");
-    }
+        }
 
     @Override
     public String toString() {
