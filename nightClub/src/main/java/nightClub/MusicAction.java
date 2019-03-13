@@ -6,7 +6,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 /** Класс, описывающий поведение музыки, а также содержащий таймер.
- * Содержит поле для установки числа треков на текущую ночью
+ * Содержит поле для установки числа треков на текущую ночь
  * Также есть список людей, пришедших на дискотеку и метод, определяющий их поведение в зависимости от стиля
  * */
 
@@ -39,7 +39,7 @@ public class MusicAction extends TimerTask {
     //переопределение метода run() для TimerTask. Данный метод выполняется при выполнении scheduleAtFixedRate в Timer
     @Override
     public void run() {
-        MusicStyle m = getRandonMusicStyle();
+        MusicStyle m = getRandonMusicStyle();           //генерация случайного типа музыки
         System.out.println("currentMusicStyle = " + m);
         //триггер
         System.out.println(amountTrack--);              //обратный отсчет от заданного кол-ва треков
@@ -49,11 +49,10 @@ public class MusicAction extends TimerTask {
         for (Person person : this.people) {
             person.doAction(m);                         //полиморфный вызов метода
         }
-
     }
 
     /** Метод, запускающий таймер, который активирует метод run()
-     * В итоге генерится случайный стиль музыки каждые 5 секунд и идет определение действий пришедших в клуб людей.
+     * В итоге генерится случайный стиль музыки каждые musicIntervalMC секунд и идет определение действий пришедших в клуб людей.
      * в качестве TimerTask передается на вход scheduleAtFixedRate созданный в методе клуба инстанс MusicAction
      * period (последний параметр) определяет частоту выполнения того, что описано в run().
      * @param amountTrack определяет кол-во запусков того, что лежит в методе run()*/
