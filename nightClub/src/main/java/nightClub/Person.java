@@ -23,7 +23,7 @@ public class Person {
         return sex;
     }
 
-    //перечисление возможных типов людей. приходящих в клуб и подчиняющихся типу person для генерации случайного выбора
+    //Вспомогательный метод. перечисление возможных типов людей. приходящих в клуб и подчиняющихся типу person для генерации случайного выбора
     public static Person typeOfPerson(int type){
         if (type == 0) return new Person();
         else if (type == 1) return new HipHopDancer(); //todo добавить еще танцоров сюда. когда будут созданы
