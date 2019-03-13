@@ -6,7 +6,7 @@ import java.util.Random;
 
 
 /**
- *
+ * Основной класс, описывающий клуб  + метод для запуска программы
  *
  */
 public class NightClub
@@ -28,37 +28,24 @@ public class NightClub
 
     public void openClub(int amountTrack) {
         int countPeople = generatePeopleToday();  //случайное число людей. пришедшах в клуб
-        musicAction.setAmountTrack(amountTrack);     //установка общего кол-ва треков поставленных на дискотеке
+        musicAction.setAmountTrack(amountTrack);     //установка общего кол-ва треков поставленных на дискотеке //todo может это надо тоже в конструктор запихнуть?
 
         //генерация людей  сразными типами в произвольном порядке
         people = new ArrayList<>();
         for (int i = 0; i < countPeople; i++) {
-            people.add(Person.typeOfPerson(new Random().nextInt(2)));   //todo 2 - это число типов людей, доступных в типах. Поменять и лучше вынести в  переменную
+            people.add(Person.typeOfPerson(new Random().nextInt(5)));   //todo 2 - это число типов людей, доступных в типах. Поменять и лучше вынести в  переменную
         }
 
-        musicAction.changeMusicBySchedule();        //start music
-
-        //перебор людей пока играет музыка
-        for (Person person : people) {
-            person.doAction(musicAction.getMusicStyle());  //полиморфный вызов метода
-        }
+        musicAction.setPeople(people);  //передала людей
+        musicAction.changeMusicBySchedule(musicAction);        //start music
 
     }
 
 
-
-
-
     public static void main( String[] args )
     {
-        NightClub nightClub = new NightClub(150);
-        nightClub.openClub(15);
-
-/*        Person person = new Person();
-        person.doAction();*/
-
-
-
+        NightClub nightClub = new NightClub(50);
+        nightClub.openClub(10);
 
     }
 }

@@ -27,6 +27,9 @@ public class Person {
     public static Person typeOfPerson(int type){
         if (type == 0) return new Person();
         else if (type == 1) return new HipHopDancer(); //todo добавить еще танцоров сюда. когда будут созданы
+        else if (type == 2) return new RnBDancer();
+        else if (type == 3) return new ElectroDancer();
+        else if (type == 4) return new PopDancer();
         else throw new IllegalArgumentException("wrong type");
 
     }

@@ -1,5 +1,6 @@
 package nightClub;
 
+import java.util.List;
 import java.util.Random;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -8,9 +9,14 @@ public class MusicAction extends TimerTask {
     private MusicStyle musicStyle;
     private int amountTrack;  //переменная для определения количества треков за ночь в клубе
     private Timer timer = new Timer();
+    private List<Person> people;
 
     public void setAmountTrack(int amountTrack) {
         this.amountTrack = amountTrack;
+    }
+
+    public void setPeople(List people) {
+        this.people = people;
     }
 
     //перечисление доступных музыкальных стилей
@@ -42,12 +48,16 @@ public class MusicAction extends TimerTask {
         System.out.println(amountTrack--);  //обратный отсчет от заданного кол-ва треков
         if (amountTrack < 0) this.timer.cancel();  //остановка таймера
 
+        //перебор людей пока играет музыка
+        for (Person person : this.people) {
+            person.doAction(getMusicStyle());  //полиморфный вызов метода
+        }
 
     }
 
 
     //метод, сменяющий мелодию каждые 5 секунд
-    public void changeMusicBySchedule() {
-        this.timer.scheduleAtFixedRate(new MusicAction(), 0, 5000); //todo или L приписать к цифрам надо?
+    public void changeMusicBySchedule(MusicAction musicAction) {
+        this.timer.scheduleAtFixedRate(musicAction, 0, 5000);
     }
 }
