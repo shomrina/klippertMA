@@ -6,3 +6,150 @@
 2020-10-06 22:35:53,610 INFO SampleTest [main] Открыта страница отус
 2020-10-06 22:36:05,353 INFO SampleTest [main] Драйвер поднят
 2020-10-06 22:36:05,353 INFO SampleTest [main] this is info
+2020-10-13 21:13:17,599 INFO SampleTest [main] Драйвер поднят
+2020-10-13 21:13:22,242 INFO SampleTest [main] Драйвер поднят
+2020-10-13 21:14:53,968 INFO SampleTest [main] Драйвер поднят
+2020-10-13 21:14:56,993 INFO SampleTest [main] Открыта страница отус
+2020-10-13 21:15:01,874 INFO SampleTest [main] Драйвер поднят
+2020-10-13 21:15:01,874 INFO SampleTest [main] this is info
+2020-10-13 21:17:23,905 INFO SampleTest [main] Драйвер поднят
+2020-10-13 21:17:26,024 INFO SampleTest [main] Открыта страница отус
+2020-10-13 21:17:26,916 INFO SampleTest [main] Установлены куки
+2020-10-13 21:17:26,942 INFO SampleTest [main] Получены все куки
+2020-10-13 21:17:26,970 INFO SampleTest [main] Получена кука по заданному имени
+2020-10-13 21:17:27,097 INFO SampleTest [main] удалены все куки
+2020-10-13 21:17:27,104 INFO SampleTest [main] Проверка на отсутвие куков успешно завершена
+2020-10-13 21:17:31,677 INFO SampleTest [main] Драйвер поднят
+2020-10-13 21:17:31,677 INFO SampleTest [main] this is info
+2020-10-13 21:25:39,696 INFO SampleTest [main] Драйвер поднят
+2020-10-13 21:25:42,888 INFO SampleTest [main] Открыта страница отус
+2020-10-13 21:25:42,974 INFO SampleTest [main] Установлены куки
+2020-10-13 21:25:42,992 INFO SampleTest [main] Получены и выведены на экран все куки
+2020-10-13 21:25:43,022 INFO SampleTest [main] Получена и выведена на экран кука по заданному имени
+2020-10-13 21:25:43,066 INFO SampleTest [main] Удалена кука по имени
+2020-10-13 21:25:43,111 INFO SampleTest [main] Удалена кука по имени
+2020-10-13 21:25:43,234 INFO SampleTest [main] удалены все куки
+2020-10-13 21:25:43,243 INFO SampleTest [main] Проверка на отсутвие куков успешно завершена
+2020-10-13 21:25:48,353 INFO SampleTest [main] Драйвер поднят
+2020-10-13 21:25:48,353 INFO SampleTest [main] this is info
+2020-10-13 21:35:42,495 INFO SampleTest [main] Драйвер поднят
+2020-10-13 21:35:47,416 INFO SampleTest [main] Открыта страница отус
+2020-10-13 21:35:47,456 INFO SampleTest [main] Установлены куки
+2020-10-13 21:35:47,472 INFO SampleTest [main] Получены и выведены на экран все куки
+2020-10-13 21:35:47,483 INFO SampleTest [main] Получена и выведена на экран кука по заданному имени
+2020-10-13 21:35:47,498 INFO SampleTest [main] Удалена кука по имени
+2020-10-13 21:35:47,506 INFO SampleTest [main] Удалена кука по имени
+2020-10-13 21:35:47,581 INFO SampleTest [main] удалены все куки
+2020-10-13 21:35:47,587 INFO SampleTest [main] Проверка на отсутвие куков успешно завершена
+2020-10-13 21:35:51,851 INFO SampleTest [main] Драйвер поднят
+2020-10-13 21:35:51,851 INFO SampleTest [main] this is info
+2020-10-15 03:54:20,583 INFO SampleTest [main] Драйвер поднят
+2020-10-15 03:54:20,618 INFO SampleTest [main] Драйвер поднят
+2020-10-15 03:54:20,618 INFO SampleTest [main] this is info
+2020-10-15 03:58:06,416 INFO SampleTest [main] Драйвер поднят
+2020-10-15 03:58:11,572 INFO SampleTest [main] Открыта страница отус
+2020-10-15 03:58:11,609 INFO SampleTest [main] Установлены куки
+2020-10-15 03:58:11,630 INFO SampleTest [main] Получены и выведены на экран все куки
+2020-10-15 03:58:11,638 INFO SampleTest [main] Получена и выведена на экран кука по заданному имени
+2020-10-15 03:58:11,665 INFO SampleTest [main] Удалена кука по имени
+2020-10-15 03:58:11,686 INFO SampleTest [main] Удалена кука по имени
+2020-10-15 03:58:11,997 INFO SampleTest [main] удалены все куки
+2020-10-15 03:58:12,010 INFO SampleTest [main] Проверка на отсутсвие куков успешно завершена
+2020-10-15 03:58:16,463 INFO SampleTest [main] Драйвер поднят
+2020-10-15 03:58:16,464 INFO SampleTest [main] this is info
+2020-10-15 03:59:49,704 INFO SampleTest [main] Драйвер поднят
+2020-10-15 03:59:52,229 INFO SampleTest [main] Открыта страница отус
+2020-10-15 03:59:52,271 INFO SampleTest [main] Установлены куки
+2020-10-15 03:59:52,288 INFO SampleTest [main] Получены и выведены на экран все куки
+2020-10-15 03:59:52,297 INFO SampleTest [main] Получена и выведена на экран кука по заданному имени
+2020-10-15 03:59:52,321 INFO SampleTest [main] Удалена кука по имени
+2020-10-15 03:59:52,329 INFO SampleTest [main] Удалена кука по имени
+2020-10-15 03:59:52,633 INFO SampleTest [main] удалены все куки
+2020-10-15 03:59:57,174 INFO SampleTest [main] Драйвер поднят
+2020-10-15 03:59:57,175 INFO SampleTest [main] this is info
+2020-10-15 04:00:21,936 INFO SampleTest [main] Драйвер поднят
+2020-10-15 04:00:24,583 INFO SampleTest [main] Открыта страница отус
+2020-10-15 04:00:24,619 INFO SampleTest [main] Установлены куки
+2020-10-15 04:00:24,637 INFO SampleTest [main] Получены и выведены на экран все куки
+2020-10-15 04:00:24,647 INFO SampleTest [main] Получена и выведена на экран кука по заданному имени
+2020-10-15 04:00:24,671 INFO SampleTest [main] Удалена кука по имени
+2020-10-15 04:00:24,680 INFO SampleTest [main] Удалена кука по имени
+2020-10-15 04:00:24,998 INFO SampleTest [main] удалены все куки
+2020-10-15 04:00:29,459 INFO SampleTest [main] Драйвер поднят
+2020-10-15 04:00:29,459 INFO SampleTest [main] this is info
+2020-10-15 04:02:15,019 INFO SampleTest [main] Драйвер поднят
+2020-10-15 04:02:17,516 INFO SampleTest [main] Открыта страница отус
+2020-10-15 04:02:17,557 INFO SampleTest [main] Установлены куки
+2020-10-15 04:02:17,575 INFO SampleTest [main] Получены и выведены на экран все куки
+2020-10-15 04:02:17,584 INFO SampleTest [main] Получена и выведена на экран кука по заданному имени
+2020-10-15 04:02:17,611 INFO SampleTest [main] Удалена кука по имени
+2020-10-15 04:02:17,618 INFO SampleTest [main] Удалена кука по имени
+2020-10-15 04:02:17,942 INFO SampleTest [main] удалены все куки
+2020-10-15 04:02:22,433 INFO SampleTest [main] Драйвер поднят
+2020-10-15 04:02:22,433 INFO SampleTest [main] this is info
+2020-10-15 04:03:43,217 INFO SampleTest [main] Драйвер поднят
+2020-10-15 04:03:45,593 INFO SampleTest [main] Открыта страница отус
+2020-10-15 04:03:45,630 INFO SampleTest [main] Установлены куки
+2020-10-15 04:03:45,646 INFO SampleTest [main] Получены и выведены на экран все куки
+2020-10-15 04:03:45,656 INFO SampleTest [main] Получена и выведена на экран кука по заданному имени
+2020-10-15 04:03:45,674 INFO SampleTest [main] Удалена кука по имени
+2020-10-15 04:03:45,682 INFO SampleTest [main] Удалена кука по имени
+2020-10-15 04:03:45,787 INFO SampleTest [main] удалены все куки
+2020-10-15 04:03:45,798 INFO SampleTest [main] Проверка на отсутсвие куков успешно завершена
+2020-10-15 04:03:50,304 INFO SampleTest [main] Драйвер поднят
+2020-10-15 04:03:50,305 INFO SampleTest [main] this is info
+2020-10-15 04:04:37,922 INFO SampleTest [main] Драйвер поднят
+2020-10-15 04:04:41,025 INFO SampleTest [main] Открыта страница отус
+2020-10-15 04:04:41,065 INFO SampleTest [main] Установлены куки
+2020-10-15 04:04:41,082 INFO SampleTest [main] Получены и выведены на экран все куки
+2020-10-15 04:04:41,092 INFO SampleTest [main] Получена и выведена на экран кука по заданному имени
+2020-10-15 04:04:41,116 INFO SampleTest [main] Удалена кука по имени
+2020-10-15 04:04:41,124 INFO SampleTest [main] Удалена кука по имени
+2020-10-15 04:04:41,431 INFO SampleTest [main] удалены все куки
+2020-10-15 04:04:45,923 INFO SampleTest [main] Драйвер поднят
+2020-10-15 04:04:45,923 INFO SampleTest [main] this is info
+2020-10-15 04:05:40,691 INFO SampleTest [main] Драйвер поднят
+2020-10-15 04:05:43,083 INFO SampleTest [main] Открыта страница отус
+2020-10-15 04:05:43,123 INFO SampleTest [main] Установлены куки
+2020-10-15 04:05:43,140 INFO SampleTest [main] Получены и выведены на экран все куки
+2020-10-15 04:05:43,152 INFO SampleTest [main] Получена и выведена на экран кука по заданному имени
+2020-10-15 04:05:43,176 INFO SampleTest [main] Удалена кука по имени
+2020-10-15 04:05:43,183 INFO SampleTest [main] Удалена кука по имени
+2020-10-15 04:05:43,484 INFO SampleTest [main] удалены все куки
+2020-10-15 04:05:47,968 INFO SampleTest [main] Драйвер поднят
+2020-10-15 04:05:47,969 INFO SampleTest [main] this is info
+2020-10-15 04:16:15,184 INFO SampleTest [main] Драйвер поднят
+2020-10-15 04:16:19,955 INFO SampleTest [main] Открыта страница отус
+2020-10-15 04:16:19,991 INFO SampleTest [main] Установлены куки
+2020-10-15 04:16:20,008 INFO SampleTest [main] Получены и выведены на экран все куки
+2020-10-15 04:16:20,020 INFO SampleTest [main] Получена и выведена на экран кука по заданному имени
+2020-10-15 04:16:20,047 INFO SampleTest [main] Удалена кука по имени
+2020-10-15 04:16:20,055 INFO SampleTest [main] Удалена кука по имени
+2020-10-15 04:16:20,226 INFO SampleTest [main] удалены все куки
+2020-10-15 04:16:20,238 INFO SampleTest [main] Проверка на отсутсвие куков успешно завершена
+2020-10-15 04:16:24,680 INFO SampleTest [main] Драйвер поднят
+2020-10-15 04:16:24,680 INFO SampleTest [main] this is info
+2020-10-15 04:43:28,512 INFO SampleTest [main] Драйвер поднят
+2020-10-15 04:43:32,146 INFO SampleTest [main] Открыта страница отус
+2020-10-15 04:43:33,064 INFO SampleTest [main] Установлены куки
+2020-10-15 04:43:33,079 INFO SampleTest [main] Получены и выведены на экран все куки
+2020-10-15 04:43:33,094 INFO SampleTest [main] Получена и выведена на экран кука по заданному имени
+2020-10-15 04:43:33,116 INFO SampleTest [main] Удалена кука по имени
+2020-10-15 04:43:33,124 INFO SampleTest [main] Удалена кука по имени
+2020-10-15 04:43:33,294 INFO SampleTest [main] удалены все куки
+2020-10-15 04:43:33,305 INFO SampleTest [main] Проверка на отсутсвие куков успешно завершена
+2020-10-15 04:43:37,708 INFO SampleTest [main] Драйвер поднят
+2020-10-15 04:43:37,717 INFO SampleTest [main] this is info
+2020-10-15 04:49:47,073 INFO SampleTest [main] Драйвер поднят
+2020-10-15 04:49:51,096 INFO SampleTest [main] Драйвер поднят вторым способом
+2020-10-15 04:49:53,959 INFO SampleTest [main] Открыта страница отус
+2020-10-15 04:49:54,071 INFO SampleTest [main] Установлены куки
+2020-10-15 04:49:54,092 INFO SampleTest [main] Получены и выведены на экран все куки
+2020-10-15 04:49:54,103 INFO SampleTest [main] Получена и выведена на экран кука по заданному имени
+2020-10-15 04:49:54,156 INFO SampleTest [main] Удалена кука по имени
+2020-10-15 04:49:54,188 INFO SampleTest [main] Удалена кука по имени
+2020-10-15 04:49:54,430 INFO SampleTest [main] удалены все куки
+2020-10-15 04:49:54,441 INFO SampleTest [main] Проверка на отсутсвие куков успешно завершена
+2020-10-15 04:49:59,082 INFO SampleTest [main] Драйвер поднят
+2020-10-15 04:50:03,650 INFO SampleTest [main] Драйвер поднят вторым способом
+2020-10-15 04:50:03,650 INFO SampleTest [main] this is info
