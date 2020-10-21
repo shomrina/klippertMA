@@ -6,3 +6,12 @@
 2020-10-06 22:35:53,610 INFO SampleTest [main] Открыта страница отус
 2020-10-06 22:36:05,353 INFO SampleTest [main] Драйвер поднят
 2020-10-06 22:36:05,353 INFO SampleTest [main] this is info
+2020-10-22 01:16:56,095 INFO SampleTest [main] Драйвер поднят
+2020-10-22 01:16:57,418 INFO WaitsTest [main] Открыта страница https://ng-bootstrap.github.io/#/components/alert/examples
+2020-10-22 01:16:57,440 INFO WaitsTest [main] Кнопка найдена
+2020-10-22 01:16:57,580 INFO WaitsTest [main] Alert text Thu Oct 22 2020 01:16:57 GMT+0300 (Москва, стандартное время) - Message successfully changed.
+×
+2020-10-22 01:16:57,580 INFO WaitsTest [main] Начато ожидание
+2020-10-22 01:16:59,080 INFO WaitsTest [main] Ожидание закончено
+2020-10-22 01:16:59,194 INFO WaitsTest [main] Alert text Thu Oct 22 2020 01:16:59 GMT+0300 (Москва, стандартное время) - Message successfully changed.
+×
