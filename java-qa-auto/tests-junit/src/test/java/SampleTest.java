@@ -85,13 +85,13 @@ public class SampleTest {
         }
         //todo добавить контактную информацию (2 шт)
         //контактная информация. добавление контактов
-       /* driver.findElement(By.cssSelector("button.lk-cv-block__action:nth-child(6)")).click();
+        driver.findElement(By.cssSelector("button.lk-cv-block__action:nth-child(6)")).click();
         Select dropdownContact = new Select(driver.findElement(By.name("contact-1-service")));
         dropdownContact.selectByVisibleText("Facebook");
         driver.findElement(By.id("id_contact-1-value")).sendKeys("link1");
         logger.info("Добавлен контакт фейсбук");
 
-        driver.findElement(By.cssSelector("button.lk-cv-block__action:nth-child(6)")).click();
+         /*  driver.findElement(By.cssSelector("button.lk-cv-block__action:nth-child(6)")).click();
         dropdownContact.selectByVisibleText("OK");
         driver.findElement(By.id("id_contact-3-value")).sendKeys("link2");
         logger.info("Добавлен контакт ОК");*/
@@ -146,6 +146,7 @@ public class SampleTest {
 
     private void enterLK()
     {
+        //todo переписать переход через экшены и клики (не по ссылке)
         String locator = ".ic-blog-default-avatar";
         WebElement icon = driver.findElement(By.cssSelector(locator));
         Actions actions = new Actions(driver);
