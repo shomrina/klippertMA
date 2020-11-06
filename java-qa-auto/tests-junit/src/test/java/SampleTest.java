@@ -14,6 +14,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class SampleTest {
@@ -85,11 +86,22 @@ public class SampleTest {
         }
         //todo добавить контактную информацию (2 шт)
         //контактная информация. добавление контактов
-        driver.findElement(By.cssSelector("button.lk-cv-block__action:nth-child(6)")).click();
+        WebElement contactsBlock = driver.findElement(By.cssSelector("div[data-prefix='contact']")); //получение блока способ связи, кнопка удалить и добавить (но если ничего не заполнено)
+        WebElement contact = contactsBlock.findElement(By.cssSelector("div[data-selected-option-class='lk-cv-block__select-option_selected']"));
+        Select dropdownContacts = new Select(contact); //находит Способ свзязи , но надо искать внутри элемнета выше
+
+        List<WebElement> deleteButton = contactsBlock.findElements(By.cssSelector("button[Text='Удалить'"));
+
+      //  if (contact.findElement(By.cssSelector("span")).getText().equals("Способ связи")) { //todo заменить на трай кетч?
+            dropdownContacts.selectByVisibleText("WhatsApp");
+
+
+
+        /*driver.findElement(By.cssSelector("button.lk-cv-block__action:nth-child(6)")).click(); //кнопка добавить
         Select dropdownContact = new Select(driver.findElement(By.name("contact-1-service")));
         dropdownContact.selectByVisibleText("Facebook");
         driver.findElement(By.id("id_contact-1-value")).sendKeys("link1");
-        logger.info("Добавлен контакт фейсбук");
+        logger.info("Добавлен контакт фейсбук");*/
 
          /*  driver.findElement(By.cssSelector("button.lk-cv-block__action:nth-child(6)")).click();
         dropdownContact.selectByVisibleText("OK");
@@ -118,7 +130,7 @@ public class SampleTest {
         Assert.assertEquals("Санкт-Петербург", driver.findElement(By.cssSelector(".js-lk-cv-dependent-slave-city > label:nth-child(1) > div:nth-child(2)")).getText());
         Assert.assertEquals("Средний (Intermediate)", driver.findElement(By.cssSelector("div.container__col_12:nth-child(3) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(3) > div:nth-child(2) > div:nth-child(1) > label:nth-child(1) > div:nth-child(2)")).getText());
 
-        ///todo добавить проверку что есть инфа о контактах
+        //todo добавить проверку что есть инфа о контактах
 
 
 
